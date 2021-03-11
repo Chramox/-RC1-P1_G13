@@ -1,9 +1,12 @@
 # Práctica 1
+
 ## Integrantes
-- Fernando Josue Tello Valiente - 201800714
-- Jose Carlos Jimenez - 201801195
-- Jorge Daniel Juarez Aldana - 201807022
-- Juan Marcos Ibarra Lopez - 201801345
+| Fernando Josue Tello Valiente - 201800714 | Juan Marcos Ibarra Lopez - 201801345 | Jorge Daniel Juarez Aldana - 201807022 | Jose Carlos Jimenez - 201801195 |
+|:-------------------------------------------------------------------------------:|:----------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------:|
+| [![](https://github.com/FerJoTello.png?size=150)](https://github.com/FerJoTello)    | [![](https://github.com/Chramox.png?size=150)](https://github.com/Chramox)   | [![](https://github.com/joorgej.png?size=150)](https://github.com/joorgej)   | [![](https://github.com/Jose-Carlos-Jimenez.png?size=150)](https://github.com/Jose-Carlos-Jimenez)   |
+| <a href="https://github.com/FerJoTello" target="_blank">`github.com/FerJoTello`</a> | <a href="https://github.com/Chramox" target="_blank">`github.com/Chramox`</a> | <a href="https://github.com/joorgej" target="_blank">`github.com/joorgej`</a> | <a href="https://github.com/Jose-Carlos-Jimenez" target="_blank">`github.com/Jose-Carlos-Jimenez`</a> |
+
+
 ## Descripción
 Fue solicitada una infraestructura de red para una compañía, donde se especifica previamente dos topologías de red, y a partir de ellas fue configurada la red para brindar comunicación a los equipos de acuerdo a las necesidades que presentan.
 
