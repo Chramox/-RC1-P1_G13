@@ -28,11 +28,14 @@ Cada departamento cuanta con una VLAN distinta para asegurarse que no exista com
 
 ### Topología 2
 ![Topología2](https://media.discordapp.net/attachments/733900007299874866/819375413125709845/unknown.png?width=895&height=373)
+
 Cada departamento requiere de un servidor, los cuales son máquinas virtuales con sistema operativo Linux (Ubuntu). En cada una de estas máquinas se encuentra hospedada la página web de cada departamento, las cuales cuentan con un encabezado que las identifica y un tema informativo en específico. La vista de estas páginas se encuentran en el apartado de **Páginas web**.
 
 ### Conexión entre topologías
 Como se mencionó anteriormente, las topologías se encuentran en máquinas físicas distintas, por lo que es necesario conectarlas de alguna forma. Para ello se utiliza una VPN con conexión UDP, utilizando la herramienta OpenVPN, esto se logra por medio del servicio EC2 de Amazon en el cual se montó una máquina virtual que está situada en el este de Estados Unidos y que sirve como un intermediario entre las dos máquinas físicas.
+
 ![OpenVPN funcionando](https://media.discordapp.net/attachments/733900007299874866/819375840232079380/unknown.png?width=335&height=574)
+
 
 ## Parámetros de la red
 A continuación se enlista la información de la configuración que se realizó en la red. Considerando que esta práctica pertenece al grupo 13, se encuentran dentro de las IP's el número **13** como se solicitó.
@@ -56,21 +59,26 @@ A continuación se enlista la información de la configuración que se realizó 
 
 ## Configuración VPC's
 ![VPC](https://media.discordapp.net/attachments/694808399358984302/819378952345878548/unknown.png?width=541&height=243)
+
 Con el comando **ip** se configuran la IP y Máscara de Red CIDR para las máquinas virtuales simuladas de GNS3.
 ## Configuración de Switch (VLAN)
 ![switch vlan](https://cdn.discordapp.com/attachments/733900007299874866/819377300301807666/unknown.png)
+
 En cada switch se configuraron los puertos Ethernet según correspondiera, ya sea añadiendo el puerto a una **VLAN** o cambiando su tipo a truncal.
 
 ## Configuración de VPN
 ![cloud](https://cdn.discordapp.com/attachments/694808399358984302/819380871140081674/unknown.png)
+
 Para conectar las topologías, se indica el puerto local, el host remoto (este lo brinda la VPN) y el puerto remoto. Estas configuraciones se realizan en un objeto **Cloud**.
 
 ## Configuración de IP's (Windows)
 ![switch vlan](https://media.discordapp.net/attachments/694808399358984302/819380445942382662/unknown.png?width=669&height=502)
+
 Las máquinas virtuales con sistema operativo Windows se configuran a través del protocolo **TCP/IPv4** de su respectivo controlador de red.
 
 ## Configuración de IP's (Linux)
 ![OpenVPN funcionando](https://media.discordapp.net/attachments/733900007299874866/819381627615969300/unknown.png?width=466&height=396)
+
 Las máquinas virtuales con sistema operativo Linux (Ubuntu) se configuran a través del protocolo **TCP/IPv4** de su respectivo controlador de red.
 
 ## Páginas web
